@@ -10,7 +10,7 @@ YA IMPLEMENTADAS:
 	* GetDomain
 
 */
- 
+
 Ows4js.Csw ={};
 
 Ows4js.Csw = function(url, config) {
@@ -48,7 +48,7 @@ Ows4js.Csw.prototype.GetCapabilities = function(){
         me.serviceProvider = capabilities['csw:Capabilities'].serviceProvider;
         me.operationsMetadata = capabilities['csw:Capabilities'].operationsMetadata;
         me.filterCapabilities = capabilities['csw:Capabilities'].filterCapabilities;
-        console.log(responseXML);
+        //console.log(responseXML);
 		return me;
     });
 };
@@ -76,14 +76,14 @@ Ows4js.Csw.prototype.GetRecords = function(startPosition, maxRecords, filter, ou
     var myXML = Ows4js.Csw.marshalDocument(recordAction);
     // Post XML
     return Ows4js.Util.httpPost(this.url, "imagorbis", myXML, this.credentials).then(function(responseXML){
-        console.log(responseXML);
-		
+        //console.log(responseXML);
+
 	// En origen, se devolvía el resultado en JSON utilizando el archivo jsonix.js, pero no funciona con el campo dc:uri.
 	// Por eso, el resultado se devuelve aquí en xml, y se transforma a JSON en el archivo GetRecords.html; a través de la función xmltoJSON alojada en el archivo xmltojson.js.
 	//return Ows4js.Csw.unmarshalDocument(responseXML);
 	return responseXML;
     });
-	
+
 };
 
 Ows4js.Csw.marshalDocument = function(object){
@@ -117,7 +117,7 @@ Ows4js.Csw.prototype.GetRecordById = function(id_list) {
     var myXML = Ows4js.Csw.marshalDocument(byIdAction);
     //console.log(myXML);
     return Ows4js.Util.httpPost(this.url, "application/xml", myXML, this.credentials).then(function(responseXML){
-        console.log(responseXML);
+        //console.log(responseXML);
 		//return Ows4js.Csw.unmarshalDocument(responseXML); // Utilizando jsonix
 		return xmlToJSON.parseXML(responseXML); //Utilizando la función creada arriba.
     });
@@ -138,14 +138,14 @@ Ows4js.Csw.prototype.GetDomain = function(propertyName){
     var myXML = Ows4js.Csw.marshalDocument(getdomainAction);
     //console.log(myXML);
     return Ows4js.Util.httpPost(this.url, "application/xml", myXML, this.credentials).then(function(responseXML){
-        console.log(responseXML);
+        //console.log(responseXML);
 		//return Ows4js.Csw.unmarshalDocument(responseXML); // Utilizando jsonix
 		return xmlToJSON.parseXML(responseXML); //Utilizando la función creada arriba.
     });
 };
 
 
-/* 
+/*
 NO IMPLEMENTADAS:
 
 	* Transaction:
@@ -165,7 +165,7 @@ Ows4js.Csw.prototype.insertRecords = function (records){
     var myXML = Ows4js.Csw.marshalDocument(transaction);
     //console.log(myXML);
     return Ows4js.Util.httpPost(this.url, "application/xml", myXML, this.credentials).then(function(responseXML){
-        console.log(responseXML);
+      //  console.log(responseXML);
 		return Ows4js.Csw.unmarshalDocument(responseXML);
     });
 };
@@ -177,9 +177,9 @@ Ows4js.Csw.prototype.insertRecords = function (records){
 Ows4js.Csw.prototype.updateRecord = function(records){
     var transactionAction = new Ows4js.Csw.Update(records);
     var transaction = new Ows4js.Csw.Transaction(transactionAction);
-    console.log(transaction);
+    //console.log(transaction);
     var myXML = Ows4js.Csw.marshalDocument(transaction);
-    console.log(myXML);
+    //console.log(myXML);
     return Ows4js.Util.httpPost(this.url, "application/xml", myXML, this.credentials).then(function(responseXML){
         return Ows4js.Csw.unmarshalDocument(responseXML);
     });
@@ -192,7 +192,7 @@ Ows4js.Csw.prototype.deleteRecords = function(filter){
     var transactionAction = new Ows4js.Csw.Delete(filter);
     var transaction = new Ows4js.Csw.Transaction(transactionAction);
     var myXML = Ows4js.Csw.marshalDocument(transaction);
-    console.log(myXML);
+    //console.log(myXML);
     return Ows4js.Util.httpPost(this.url, "application/xml", myXML, this.credentials).then(function(responseXML){
         return Ows4js.Csw.unmarshalDocument(responseXML);
     });

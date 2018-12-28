@@ -36,7 +36,7 @@ function CambioMapaBase(capa){
     //Asignar el color de fondo:
     $("#map").css({'background':'#f7f6f6'});
     //Asignar el estilo a partir del archivo JSON:
-    var style = 'js/estilosVT/light.json';
+    var style = 'js/estilos-vt/light.json';
     fetch(style).then(function(response) {
       response.json().then(function(glStyle) {
         olms.applyStyle(capaBaseVTusig, glStyle, 'openmaptiles').then(function() {
@@ -51,7 +51,7 @@ function CambioMapaBase(capa){
     });
   } else if (capa == 'vector_tiles_usig_dark') {
     $("#map").css({'background':'#282828'});
-    var style = 'js/estilosVT/dark.json';
+    var style = 'js/estilos-vt/dark.json';
     fetch(style).then(function(response) {
       response.json().then(function(glStyle) {
         olms.applyStyle(capaBaseVTusig, glStyle, 'openmaptiles').then(function() {

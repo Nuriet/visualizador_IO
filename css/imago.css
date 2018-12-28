@@ -775,23 +775,27 @@ h6{
   background-color: #fff;
   color: #777777;
   border: 0.05em solid #e7e7e7;
+  cursor: pointer !important;
 }
 .txt_seleccionar_archivo_es::after{
   background-color: #e7e7e7;
   color: #777777;
   border: 0;
   content: "Examinar";
+  cursor: pointer !important;
 }
 .txt_seleccionar_archivo_en{
   background-color: #fff;
   color: #777777;
   border: 0.05em solid #e7e7e7;
+  cursor: pointer !important;
 }
 .txt_seleccionar_archivo_en::after{
   background-color: #e7e7e7;
   color: #777777;
   border: 0;
   content: "Explore";
+  cursor: pointer !important;
 }
 #zonaArrastrar{
   height:12.4em;

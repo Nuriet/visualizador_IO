@@ -31,7 +31,6 @@ function AnadirWMS(urlEntrada,capaEntrada,opacidadEntrada,hacerZoom) {
   }).done(function(text) {
 		// CASO 1. ÉXITO EN LA RESPUESTA AL GETCAPABILITIES: crea la capa con extent:
     var result = parser.read(text);
-		console.log(result);
 
 		//ALGORITMO PARA BUSCAR LA INFORMACIÓN PARA EXTENT Y ABSTRACT dentro del resultado del GetCapabilities (cuando este sí se ha obtenido):
 			//Teniendo en cuenta que puede haber muchos casos de n capas dentro de diferentes niveles: 1, 2, 3...

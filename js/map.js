@@ -36,7 +36,7 @@ function CrearMapa(){
     }),
   });
   // Estilo a aplicar a las teselas:
-  var style = 'js/estilosVT/light.json';
+  var style = 'js/estilos-vt/light.json';
     fetch(style).then(function(response) {
       response.json().then(function(glStyle) {
         olms.applyStyle(capaBaseVTusig, glStyle, 'openmaptiles').then(function() {
@@ -87,7 +87,7 @@ function CrearMapa(){
     }),
   });
   // Estilo a aplicar a las teselas:
-  var style = 'js/estilosVT/light.json';
+  var style = 'js/estilos-vt/light.json';
     fetch(style).then(function(response) {
       response.json().then(function(glStyle) {
         olms.applyStyle(capaBaseOverviewMapVTusig, glStyle, 'openmaptiles').then(function() {
@@ -192,7 +192,6 @@ function CrearMapa(){
       // - 2: que la capa no sea la capa creada para guardar las mediciones sobre el mapa ni los dibujos realizados, y
       // - 2: que el modo medición esté desactivado; y que el modo dibujo también.
       if ((medicionHabilitada == false) && (dibujoHabilitado == false)){
-        console.log(layer.values_.name);
         if (feature && (layer != map.getLayers().getArray()[0]) && (arrayCapasYaAnadidasAPopup.indexOf(layer.values_.name) == -1) && (layer.getOpacity() > 0.05) && (layer.values_.name != 'capaMedicion') && (layer.values_.name != 'capaDibujo')){
           //Si se trata de la primera capa de la que se va a añadir info al popup; que esté desplegada:
           if (arrayCapasYaAnadidasAPopup.length == 0){
