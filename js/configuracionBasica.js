@@ -7,7 +7,7 @@ var numMaxCapasCargadas = 20;
 var tamanoMaximoArchivo = 99999999;
 
 //Dimensión cuadrados del menú temáticas (en px) (160px valor recomendado):
-var dimensionTematicai = 160;
+var dimensionTematicai = 155;
 
 //Nivel hasta el que se redondean los campos numéricos mostrados en el popup:
 var nivelRedondeoPopup = 100;

@@ -211,7 +211,7 @@ function PonerIdioma(lang){
 		tipDibujarBorrar = 'Double click to remove feature.';
 		inputEtiqueta = 'Label';
 
-		botonCC_BY_SA = "window.open('https://creativecommons.org/licenses/by-sa/3.0/es/deed.en')";
+		botonCC_BY_SA = "window.open('https://creativecommons.org/licenses/by-nc-sa/4.0/')";
 
 		//"Examinar"/"Explore" en las barras de carga de archivos:
 		$('.txt_seleccionar_archivo_es').addClass('txt_seleccionar_archivo_en');
@@ -304,7 +304,7 @@ function PonerIdioma(lang){
 		tipDibujarBorrar = 'Doble click para borrar feature.';
 		inputEtiqueta = 'Etiqueta';
 
-		botonCC_BY_SA = "window.open('https://creativecommons.org/licenses/by-sa/3.0/es/')";
+		botonCC_BY_SA = "window.open('https://creativecommons.org/licenses/by-nc-sa/3.0/es/')";
 
 		//"Examinar"/"Explore" en las barras de carga de archivos:
 		$('.txt_seleccionar_archivo_en').addClass('txt_seleccionar_archivo_es');

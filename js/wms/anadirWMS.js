@@ -43,6 +43,7 @@ function AnadirWMS(urlEntrada,capaEntrada,opacidadEntrada,hacerZoom) {
 			queryable = result.Capability.Layer.Layer.find(l => l.Name === capaEntrada).queryable;
 			peticionLeyenda = result.Capability.Layer.Layer.find(l => l.Name === capaEntrada).Style[0].LegendURL[0].OnlineResource;
 			version = result.version;
+			//console.log(result);
 		} else {
 			//Caso 12: Las capas no se encuentran en un primer nivel: habrá que buscar en el segundo nivel:
 			for (var i=0; i<result.Capability.Layer.Layer.length; i++) {
@@ -55,9 +56,10 @@ function AnadirWMS(urlEntrada,capaEntrada,opacidadEntrada,hacerZoom) {
 					peticionLeyenda = result.Capability.Layer.Layer[i].Layer.find(l => l.Name === capaEntrada).Style[0].LegendURL[0].OnlineResource;
 					version = result.version;
 					break;
+
 				} else {
 					//Caso 122: Las capas tampoco se encuentran en un segundo nivel.
-					if (result.Capability.Layer.EX_GeographicBoundingBox && result.Capability.Layer.Abstract){
+					if (result.Capability.Layer.EX_GeographicBoundingBox && result.Capability.Layer.Title){
 						//Caso 1221: El servicio (sin entrar en ninguna capa ni subcapa) tiene definidos un extent y un abstract: se asigna este:
 						extent3857 = ol.proj.transformExtent(result.Capability.Layer.EX_GeographicBoundingBox, 'EPSG:4326', 'EPSG:3857');
 						abstract = result.Capability.Layer.Abstract;
@@ -65,6 +67,7 @@ function AnadirWMS(urlEntrada,capaEntrada,opacidadEntrada,hacerZoom) {
 						queryable = result.Capability.Layer.queryable;
 						peticionLeyenda = "Sin leyenda";
 						version = result.version;
+
 					} else {
 						//Caso 1222: El servicio (sin entrar en ninguna capa ni subcapa) no tiene definidos un extent y un abstract: se asigna el extent de todo el mapa, y un abstract vacío:
 						extent3857 = [-20026376.39, -20048966.10, 20026376.39, 20048966.10];
@@ -73,6 +76,7 @@ function AnadirWMS(urlEntrada,capaEntrada,opacidadEntrada,hacerZoom) {
 						queryable = false;
 						peticionLeyenda = "Sin leyenda";
 						version = "";
+						//console.log(result);
 					}
 				}
 			}

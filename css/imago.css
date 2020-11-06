@@ -21,7 +21,7 @@ body {
 }
 ::-webkit-scrollbar {
   width: 8px;
-  height: 3px;
+  height: 4px;/* --- estaba en 3 --- */
 }
 ::-webkit-scrollbar-track {
   background-color: #e7e7e7;
@@ -401,6 +401,12 @@ main {
 .mapa_base_VTusig_dark{
   background-image: url('../img/VTusig_dark.JPG');
 }
+.mapa_base_VTusig_oceanbasemap{
+  background-image: url('../img/VTusig_oceanbasemap.JPG');
+}
+.mapa_base_VTusig_bluebasemap{
+  background-image: url('../img/VTusig_bluebasemap.JPG');
+}
 .mapa_base_osm{
   background-image: url('../img/osm.JPG');
 }
@@ -413,11 +419,14 @@ main {
 .mapa_base_esri_ob{
   background-image: url('../img/esri_ocean_basemap.JPG');
 }
-.mapa_base_esri_NGwm{
-  background-image: url('../img/esri_natgeo_world_map.JPG');
+.mapa_base_wmts_awmc{
+  background-image: url('../img/awcm.JPG');
 }
 .mapa_base_esri_wsr{
   background-image: url('../img/esri_world_shaded_relief.JPG');
+}
+.mapa_base_wmts_ign{
+  background-image: url('../img/ign.JPG');
 }
 
 /* Atribuciones */
@@ -643,6 +652,8 @@ input:-webkit-autofill {
 
 #espMenuTematicas{
   overflow-y: auto;
+  scrollbar-width: thin;/* scroll delgado*/
+
 }
 #espMenuGestionCapas{
   overflow-y:auto;

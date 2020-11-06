@@ -18,41 +18,31 @@ FUNCIONALIDAD:
       (el contenido del popup sobre capas WMS, que generan un GetFeatureInfo, se crea en el archivo popup.js con la función AnadirGetFeatureInfoWMSAPopup(...)).
   Esta función se ejecuta al cargar la página.
 */
-function CrearMapa(){
-  // Mapa base a cargar al inicio (Teselas Vectoriales USIG)
-  capaBaseVTusig = new ol.layer.VectorTile({
-    titulo_es: 'Vector Tiles uSIG light',
-    tipo: 'OGC:WMTS', //Campo necesario únicamente para generar el contexto.
-    queryable : false, //Campo necesario únicamente para generar el contexto.
-    tileGrid: ol.tilegrid.createXYZ({tileSize: 512, maxZoom: 24}),
-    tilePixelRatio: 8,
-    baseLayer: true,
-    visible: true,
-    declutter: true,
-    source: new ol.source.VectorTile({
-      format: new ol.format.MVT(),
-      attributions: '<a href="http://unidadsig.cchs.csic.es/sig/" target="_blank">Unidad SIG</a> | © <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> | © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
-      url: 'http://161.111.72.12:8080/data/v3/{z}/{x}/{y}.pbf'
-    }),
-  });
-  // Estilo a aplicar a las teselas:
-  var style = 'js/estilos-vt/light.json';
-    fetch(style).then(function(response) {
-      response.json().then(function(glStyle) {
-        olms.applyStyle(capaBaseVTusig, glStyle, 'openmaptiles').then(function() {
-          capaBaseVTusig.set('name','vector_tiles_usig_light');
-          capaBaseVTusig.setOpacity(0.8);
-          map.getLayers().removeAt(0);
-          map.getLayers().insertAt(0,capaBaseVTusig);
-          map.getView().setMaxZoom(20);
-        });
-      });
-    });
+function CrearMapa(mapabase){
+		
+
+																	  
+									 
+									
+																			  
+															  
+																									
+								
+				  
+					   
+					  
+																			   
+			  
+	 
+				  
+				 
+
+	
 
   /* -- CREACIÓN DEL MAPA -- */
   // Centro (Lon, Lat) y zoom inicial del mapa
-  var LonLat_centro = [-3, 39];
-  var Zoom_inicial = 6;
+  var LonLat_centro = [-3, 41];/* -3,39 */
+  var Zoom_inicial = 5;/* Alejandro lo dejó en 6 */
 
   /* Controles del mapa */
   // Escala lineal:
@@ -80,14 +70,20 @@ function CrearMapa(){
     baseLayer: true,
     visible: true,
     declutter: true,
+    //opciones de mejora del renderizado de las teselas
+    preload:Infinity,
+    updateWhileInteracting:true,
+    updateWhileAnimating:true,
+    useInterimTilesOnError:true,
+	//rendermode: 'image',
     source: new ol.source.VectorTile({
       format: new ol.format.MVT(),
       attributions: '<a href="http://unidadsig.cchs.csic.es/sig/" target="_blank">Unidad SIG</a> | © <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> | © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
-      url: 'http://161.111.72.12:8080/data/v3/{z}/{x}/{y}.pbf'
+      url: 'http://usig-teselas.cchs.csic.es/data/v3/{z}/{x}/{y}.pbf'
     }),
   });
   // Estilo a aplicar a las teselas:
-  var style = 'js/estilos-vt/light.json';
+  var style = 'js/estilosVT/light.json';
     fetch(style).then(function(response) {
       response.json().then(function(glStyle) {
         olms.applyStyle(capaBaseOverviewMapVTusig, glStyle, 'openmaptiles').then(function() {
@@ -126,9 +122,11 @@ function CrearMapa(){
     projection: 'EPSG:3857',
     center: ol.proj.fromLonLat(LonLat_centro),
     zoom: Zoom_inicial,
+	//zoomFactor:1.5,
     minZoom: 3,
     maxZoom: 28,
-    extent: [-20026376.39, -20048966.10, 20026376.39, 20048966.10]
+    extent: [-20026376.39, -20048966.10, 20026376.39, 20048966.10],
+    constrainResolution: true
   });
 
   /* Creación del popup y su overlay */
@@ -142,10 +140,12 @@ function CrearMapa(){
      duration: 250
    }
   });
-
+  var mapabasevacio = new ol.layer.Vector({
+    //Primero ponemos un mapa base sin nada, para que al llamar a la función ponMapaBase lo quite y ponga el bueno
+        });
   /* Creación del mapa */
   map = new ol.Map({
-    layers: [capaBaseVTusig],
+    layers: [mapabasevacio],
     target: 'map',
     view: vistaMapa,
     overlays: [overlayPopup],
@@ -158,6 +158,15 @@ function CrearMapa(){
       scaleLineControl, mousePositionControl, overviewMapControl
     ]),
   });
+  CambioMapaBase(mapabase);
+
+							  
+										   
+							 
+		   
+
+ 
+
 
   //Deshabilitar el zoom con el evento "doble click":
   var dblClickInteraction;
@@ -208,6 +217,9 @@ function CrearMapa(){
       }
     });
   });
+
+  
+
 }
 
 /* BUSCADOR DE LUGARES - GEONAMES */

@@ -550,6 +550,230 @@ function AnadirGeojsonPropio(idEntrada,rutaEntrada,tituloEntrada,abstractEntrada
           width: 1
         })
       }),
+      'car_mad_pto_1': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/town-hall-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_2': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/bank-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_3': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/toilet-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_4': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/home-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_5': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/prison-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_6': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/cemetery-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_7': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/telephone-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_8': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/post-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_9': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/museum-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_10': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/college-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_11': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/entrance-alt-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_12': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/hospital-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_13': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/religious-christian-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_14': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/law-scales-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_15': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/waterfall-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_16': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/slaughterhouse-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_17': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/convenience-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_18': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/picnic-site-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_19': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/militar-station-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_20': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/theatre-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_21': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/embassy-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_22': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/place-of-worship-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_23': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/lodging-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_24': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/library-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_25': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/ranger-station-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_26': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/doctor-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_27': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/fire-station-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_28': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/commercial-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_29': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/monument-esculpture-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_30': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/monument-font15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_31': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/landmark-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_32': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/monument-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_33': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/rail-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_34': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/rail-light-15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_35': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/bridge-hierr15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_36': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/bridge-mamp15.svg',
+          scale: 1
+        })
+      }),
+      'car_mad_pto_37': new ol.style.Style({
+        image: new ol.style.Icon({
+          src: './img/icons/park-15.svg',
+          scale: 1
+        })
+      }),
+
+
       'car_mad_tra_vias_pub': new ol.style.Style({
         stroke: new ol.style.Stroke({
           color: '#545454',
@@ -569,55 +793,158 @@ function AnadirGeojsonPropio(idEntrada,rutaEntrada,tituloEntrada,abstractEntrada
           width: 4
         })
       }),
-      'car_mad_equ_1': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#000000'
-            })
+      'car_mad_bar_00': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: 'rgb(252,91,3,0.8)',
+          width: 3,
+          lineDash: [10,10,5,10]
+        }),
+        fill: new ol.style.Fill({
+          color: 'rgb(252,91,3,0)',
+          opacity: 0
         })
       }),
-      'car_mad_equ_2': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#4E4E4E'
-            })
+      'car_mad_dis_00': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: '#FC5B03',
+          width: 3
+        }),
+        fill: new ol.style.Fill({
+          color: 'rgb(252,91,3,0.1)',
+          opacity: 0.1
         })
       }),
-      'car_mad_equ_3': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#FFFFFF'
-            })
+      'car_mad_vsu_00': new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: '#A305ED',
+          width: 2,
+          lineDash: [5,5,2,5]
         })
       }),
-      'car_mad_equ_4': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#FFBEBE'
-            })
+      'evonatur_usos_111': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#E6004D'
         })
       }),
-      'car_mad_equ_5': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#73004C'
-            })
+      'evonatur_usos_112': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#E10000'
         })
       }),
-      'car_mad_equ_6': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#D7D79E'
-            })
+      'evonatur_usos_121': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#B333E6'
         })
       }),
-      'car_mad_equ_7': new ol.style.Style({
+      'evonatur_usos_142': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#FFE6FF'
+        })
+      }),
+      'evonatur_usos_222': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#F2A600'
+        })
+      }),
+      'evonatur_usos_231': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#F2F24D'
+        })
+      }),
+      'evonatur_usos_241': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#FFE6A6'
+        })
+      }),
+      'evonatur_usos_242': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#FFFF00'
+        })
+      }),
+      'evonatur_usos_243': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#FFCC4D'
+        })
+      }),
+      'evonatur_usos_244': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#F2CCA5'
+        })
+      }),
+      'evonatur_usos_311': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#80FF00'
+        })
+      }),
+      'evonatur_usos_312': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#00A600'
+        })
+      }),
+      'evonatur_usos_321': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#CCE64D'
+        })
+      }),
+      'evonatur_usos_322': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#A5FE7F'
+        })
+      }),
+      'evonatur_usos_323': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#A5E54C'
+        })
+      }),
+      'evonatur_usos_324': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#A6E600'
+        })
+      }),
+      'evonatur_usos_332': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#CCCCCC'
+        })
+      }),
+      'evonatur_usos_333': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#BFFEB2'
+        })
+      }),
+      'evonatur_usos_334': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#000000'
+        })
+      }),
+      'evonatur_usos_511': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#00CCE6'
+        })
+      }),
+      'evonatur_usos_512': new ol.style.Style({
+        fill: new ol.style.Fill({
+          color: '#A5E6E6'
+        })
+      }),
+      // 'fosas_exum': new ol.style.Style({
+      //   image: new ol.style.Icon({
+      //     src: './img/icons/exhumadaTotalParcial.png',
+      //     scale: 1
+      //   })
+      // }),
+      // 'fosas_noInterv': new ol.style.Style({
+      //   image: new ol.style.Icon({
+      //     src: './img/icons/noIntervenida.png',
+      //     scale: 1
+      //   })
+      // }),
+      // 'fosas_valle': new ol.style.Style({
+      //   image: new ol.style.Icon({
+      //     src: './img/icons/valle.png',
+      //     scale: 1.5
+      //   })
+      // }),
+      'ebi_cmss': new ol.style.Style({
         image: new ol.style.Circle({
             radius: 3,
             fill: new ol.style.Fill({
@@ -625,23 +952,23 @@ function AnadirGeojsonPropio(idEntrada,rutaEntrada,tituloEntrada,abstractEntrada
             })
         })
       }),
-      'car_mad_equ_8': new ol.style.Style({
+      'ebi_resi': new ol.style.Style({
         image: new ol.style.Circle({
             radius: 3,
             fill: new ol.style.Fill({
-              color: '#C29ED7'
+              color: '#BFFEB2'
             })
         })
       }),
-      'car_mad_equ_9': new ol.style.Style({
+      'ebi_inss': new ol.style.Style({
         image: new ol.style.Circle({
             radius: 3,
             fill: new ol.style.Fill({
-              color: '#895A44'
+              color: '#A6E600'
             })
         })
       }),
-      'car_mad_equ_10': new ol.style.Style({
+      'ebi_cdia': new ol.style.Style({
         image: new ol.style.Circle({
             radius: 3,
             fill: new ol.style.Fill({
@@ -649,223 +976,20 @@ function AnadirGeojsonPropio(idEntrada,rutaEntrada,tituloEntrada,abstractEntrada
             })
         })
       }),
-      'car_mad_equ_11': new ol.style.Style({
+      'ebi_salu': new ol.style.Style({
         image: new ol.style.Circle({
             radius: 3,
             fill: new ol.style.Fill({
-              color: '#000000'
+              color: '#4c0073'
             })
         })
       }),
-      'car_mad_equ_12': new ol.style.Style({
+      'ebi_hosp': new ol.style.Style({
         image: new ol.style.Circle({
             radius: 3,
             fill: new ol.style.Fill({
-              color: '#005CE6'
+              color: '#A5E54C'
             })
-        })
-      }),
-      'car_mad_equ_13': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#000000'
-            })
-        })
-      }),
-      'car_mad_equ_14': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#CCCCCC'
-            })
-        })
-      }),
-      'car_mad_equ_15': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#BEE8FF'
-            })
-        })
-      }),
-      'car_mad_equ_16': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#E600A9'
-            })
-        })
-      }),
-      'car_mad_equ_17': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#E69800'
-            })
-        })
-      }),
-      'car_mad_equ_18': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#98E600'
-            })
-        })
-      }),
-      'car_mad_equ_19': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#00734C'
-            })
-        })
-      }),
-      'car_mad_equ_20': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#FFBEE8'
-            })
-        })
-      }),
-      'car_mad_equ_21': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#FF7F7F'
-            })
-        })
-      }),
-      'car_mad_equ_22': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#FFEBBE'
-            })
-        })
-      }),
-      'car_mad_equ_23': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#D3FFBE'
-            })
-        })
-      }),
-      'car_mad_equ_24': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#E1E1E1'
-            })
-        })
-      }),
-      'car_mad_equ_25': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#9EBBD7'
-            })
-        })
-      }),
-      'car_mad_equ_26': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#FF7F7F'
-            })
-        })
-      }),
-      'car_mad_equ_27': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#A80000'
-            })
-        })
-      }),
-      'car_mad_equ_28': new ol.style.Style({
-        image: new ol.style.Circle({
-            radius: 3,
-            fill: new ol.style.Fill({
-              color: '#E9FFBE'
-            })
-        })
-      }),
-      'car_mad_fer_1': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/estacionrojo.png',
-          scale: 0.1
-        })
-      }),
-      'car_mad_fer_2': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/estacionnegro.png',
-          scale: 0.15
-        })
-      }),
-      'car_mad_fer_3': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/estacionnegro.png',
-          scale: 0.15
-        })
-      }),
-      'car_mad_orn_1': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/punteroR.png',
-          scale: 0.5
-        })
-      }),
-      'car_mad_orn_2': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/punteroI.png',
-          scale: 0.5
-        })
-      }),
-      'car_mad_orn_3': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/punteroA.png',
-          scale: 0.5
-        })
-      }),
-      'car_mad_orn_4': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/punteroM.png',
-          scale: 0.5
-        })
-      }),
-      'car_mad_par': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/punteroV.png',
-          scale: 0.5
-        })
-      }),
-      'car_mad_pue_1': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/PuenteHIERRO.png',
-          scale: 0.25
-        })
-      }),
-      'car_mad_pue_2': new ol.style.Style({
-        image: new ol.style.Icon({
-          src: './img/icons/PuenteMamposteria.png',
-          scale: 0.25
-        })
-      }),
-      'car_mad_bar_1': new ol.style.Style({
-        stroke: new ol.style.Stroke({
-          color: '#282828',
-          width: 1.5
-        })
-      }),
-      'car_mad_bar_2': new ol.style.Style({
-        stroke: new ol.style.Stroke({
-          color: '#636363',
-          width: 0.5
-        }),
-        fill: new ol.style.Fill({
-          color: 'rgba(255,255,255,0)'
         })
       }),
       'ebi_densidad_1': new ol.style.Style({
@@ -1352,6 +1476,8 @@ function AnadirGeojsonPropio(idEntrada,rutaEntrada,tituloEntrada,abstractEntrada
           } else if ((feature.values_.mostrar_entodo_caso_Viajes > 19) && (feature.values_.mostrar_entodo_caso_Viajes <= 24)){
             return estiloDefinidoAqui["jae_educa_cie_pur_19_24"];
           }
+        } else if (idEntrada == "car_mad_pto"){
+          return estiloDefinidoAqui["car_mad_pto_" + feature.values_.cod];
         } else if (idEntrada == "car_mad_tra"){
           if (feature.values_.Capa == "Tranvia"){
             return estiloDefinidoAqui["car_mad_tra_tranvia"];
@@ -1362,6 +1488,14 @@ function AnadirGeojsonPropio(idEntrada,rutaEntrada,tituloEntrada,abstractEntrada
           } else if (feature.values_.Capa == "Ferrocarril"){
             return estiloDefinidoAqui["car_mad_tra_ferrocarril"];
           }
+        } else if (idEntrada == "car_mad_c17"){
+          return estiloDefinidoAqui["car_mad_cal_17"];
+        } else if (idEntrada == "car_mad_vsu"){
+          return estiloDefinidoAqui["car_mad_vsu_00"];
+        } else if (idEntrada == "car_mad_dac"){
+          return estiloDefinidoAqui["car_mad_dis_ac"];
+        } else if (idEntrada == "car_mad_d55"){
+          return estiloDefinidoAqui["car_mad_dis_55"];
         } else if (idEntrada == "car_mad_equ"){
           return estiloDefinidoAqui["car_mad_equ_" + feature.values_.cod];
         } else if (idEntrada == "car_mad_fer"){
@@ -1372,9 +1506,169 @@ function AnadirGeojsonPropio(idEntrada,rutaEntrada,tituloEntrada,abstractEntrada
           return estiloDefinidoAqui["car_mad_par"];
         } else if (idEntrada == "car_mad_pue"){
           return estiloDefinidoAqui["car_mad_pue_" + feature.values_.cod];
-        } else if (idEntrada == "car_mad_bar"){
-          return estiloDefinidoAqui["car_mad_bar_" + feature.values_.cod];
-        } else if (idEntrada == "pob_xxx_den"){
+        } else if (idEntrada == "car_mad_db0"){
+          if (feature.values_.cod == 2){
+            return estiloDefinidoAqui["car_mad_bar_00"];
+          } else if (feature.values_.cod == 1){
+            return estiloDefinidoAqui["car_mad_dis_00"];
+          }
+        } else if (idEntrada == "ant_xxx_o90"){
+          if (feature.values_.CODE_90 == 111){
+            return estiloDefinidoAqui["evonatur_usos_111"];
+          } else if (feature.values_.CODE_90 == 222) {
+            return estiloDefinidoAqui["evonatur_usos_222"];
+          } else if (feature.values_.CODE_90 == 231) {
+            return estiloDefinidoAqui["evonatur_usos_231"];
+          } else if (feature.values_.CODE_90 == 242) {
+            return estiloDefinidoAqui["evonatur_usos_242"];
+          } else if (feature.values_.CODE_90 == 243){
+            return estiloDefinidoAqui["evonatur_usos_243"];
+          } else if (feature.values_.CODE_90 == 244){
+            return estiloDefinidoAqui["evonatur_usos_244"];
+          } else if (feature.values_.CODE_90 == 311){
+            return estiloDefinidoAqui["evonatur_usos_311"];
+          } else if (feature.values_.CODE_90 == 312){
+            return estiloDefinidoAqui["evonatur_usos_312"];
+          } else if (feature.values_.CODE_90 == 321) {
+            return estiloDefinidoAqui["evonatur_usos_321"];
+          } else if (feature.values_.CODE_90 == 323){
+            return estiloDefinidoAqui["evonatur_usos_323"];
+          } else if (feature.values_.CODE_90 == 324){
+            return estiloDefinidoAqui["evonatur_usos_324"];
+          } else if (feature.values_.CODE_90 == 332){
+            return estiloDefinidoAqui["evonatur_usos_332"];
+          } else if (feature.values_.CODE_90 == 333){
+            return estiloDefinidoAqui["evonatur_usos_333"];
+          } else if (feature.values_.CODE_90 == 512){
+            return estiloDefinidoAqui["evonatur_usos_512"];
+          }
+        } else if (idEntrada == "ant_xxx_o00"){
+          if (feature.values_.CODE_00 == 111){
+            return estiloDefinidoAqui["evonatur_usos_111"];
+          } else if (feature.values_.CODE_00 == 222) {
+            return estiloDefinidoAqui["evonatur_usos_222"];
+          } else if (feature.values_.CODE_00 == 231) {
+            return estiloDefinidoAqui["evonatur_usos_231"];
+          } else if (feature.values_.CODE_00 == 242) {
+            return estiloDefinidoAqui["evonatur_usos_242"];
+          } else if (feature.values_.CODE_00 == 243){
+            return estiloDefinidoAqui["evonatur_usos_243"];
+          } else if (feature.values_.CODE_00 == 244){
+            return estiloDefinidoAqui["evonatur_usos_244"];
+          } else if (feature.values_.CODE_00 == 311){
+            return estiloDefinidoAqui["evonatur_usos_311"];
+          } else if (feature.values_.CODE_00 == 312){
+            return estiloDefinidoAqui["evonatur_usos_312"];
+          } else if (feature.values_.CODE_00 == 321) {
+            return estiloDefinidoAqui["evonatur_usos_321"];
+          } else if (feature.values_.CODE_00 == 323){
+            return estiloDefinidoAqui["evonatur_usos_323"];
+          } else if (feature.values_.CODE_00 == 324){
+            return estiloDefinidoAqui["evonatur_usos_324"];
+          } else if (feature.values_.CODE_00 == 332){
+            return estiloDefinidoAqui["evonatur_usos_332"];
+          } else if (feature.values_.CODE_00 == 333){
+            return estiloDefinidoAqui["evonatur_usos_333"];
+          } else if (feature.values_.CODE_00 == 512){
+            return estiloDefinidoAqui["evonatur_usos_512"];
+          }
+         } else if (idEntrada == "ant_xxx_o06"){
+           if (feature.values_.mostrar_ant_xxx_o06_Código == 111){
+             return estiloDefinidoAqui["evonatur_usos_111"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 112) {
+             return estiloDefinidoAqui["evonatur_usos_112"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 121) {
+             return estiloDefinidoAqui["evonatur_usos_121"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 222) {
+             return estiloDefinidoAqui["evonatur_usos_222"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 231) {
+             return estiloDefinidoAqui["evonatur_usos_231"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 242) {
+             return estiloDefinidoAqui["evonatur_usos_242"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 243){
+             return estiloDefinidoAqui["evonatur_usos_243"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 244){
+             return estiloDefinidoAqui["evonatur_usos_244"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 311){
+             return estiloDefinidoAqui["evonatur_usos_311"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 312){
+             return estiloDefinidoAqui["evonatur_usos_312"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 321) {
+             return estiloDefinidoAqui["evonatur_usos_321"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 323){
+             return estiloDefinidoAqui["evonatur_usos_323"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 324){
+             return estiloDefinidoAqui["evonatur_usos_324"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 332){
+             return estiloDefinidoAqui["evonatur_usos_332"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 333){
+             return estiloDefinidoAqui["evonatur_usos_333"];
+           } else if (feature.values_.mostrar_ant_xxx_o06_Código == 512){
+             return estiloDefinidoAqui["evonatur_usos_512"];
+           }
+         } else if (idEntrada == "ant_xxx_o12"){
+            if (feature.values_.CODE_12 == 111){
+              return estiloDefinidoAqui["evonatur_usos_111"];
+            } else if (feature.values_.CODE_12 == 112) {
+              return estiloDefinidoAqui["evonatur_usos_112"];
+            } else if (feature.values_.CODE_12 == 142) {
+              return estiloDefinidoAqui["evonatur_usos_142"];
+            } else if (feature.values_.CODE_12 == 222) {
+              return estiloDefinidoAqui["evonatur_usos_222"];
+            } else if (feature.values_.CODE_12 == 231) {
+              return estiloDefinidoAqui["evonatur_usos_231"];
+            } else if (feature.values_.CODE_12 == 241) {
+              return estiloDefinidoAqui["evonatur_usos_241"];
+            } else if (feature.values_.CODE_12 == 242) {
+              return estiloDefinidoAqui["evonatur_usos_242"];
+            } else if (feature.values_.CODE_12 == 243){
+              return estiloDefinidoAqui["evonatur_usos_243"];
+            } else if (feature.values_.CODE_12 == 244){
+              return estiloDefinidoAqui["evonatur_usos_244"];
+            } else if (feature.values_.CODE_12 == 311){
+              return estiloDefinidoAqui["evonatur_usos_311"];
+            } else if (feature.values_.CODE_12 == 312){
+              return estiloDefinidoAqui["evonatur_usos_312"];
+            } else if (feature.values_.CODE_12 == 321) {
+              return estiloDefinidoAqui["evonatur_usos_321"];
+            } else if (feature.values_.CODE_12 == 322) {
+              return estiloDefinidoAqui["evonatur_usos_322"];
+            } else if (feature.values_.CODE_12 == 323){
+              return estiloDefinidoAqui["evonatur_usos_323"];
+            } else if (feature.values_.CODE_12 == 324){
+              return estiloDefinidoAqui["evonatur_usos_324"];
+            } else if (feature.values_.CODE_12 == 332){
+              return estiloDefinidoAqui["evonatur_usos_332"];
+            } else if (feature.values_.CODE_12 == 333){
+              return estiloDefinidoAqui["evonatur_usos_333"];
+            } else if (feature.values_.CODE_12 == 334) {
+              return estiloDefinidoAqui["evonatur_usos_334"];
+            } else if (feature.values_.CODE_12 == 512){
+              return estiloDefinidoAqui["evonatur_usos_512"];
+            }
+          }
+          // else if (idEntrada == "ant_his_fos") {
+          //     if (feature.values_.tipo == 3){
+          //     return estiloDefinidoAqui["fosas_valle"];
+          //   } else if (feature.values_.tipo == 1){
+          //     return estiloDefinidoAqui["fosas_exum"];
+          //   } else if (feature.values_.tipo == 2){
+          //     return estiloDefinidoAqui["fosas_noInterv"];
+          //   }
+          // }
+          else if (idEntrada == "pob_xxx_css"){
+            return estiloDefinidoAqui["ebi_cmss"];
+          } else if (idEntrada == "pob_xxx_res"){
+            return estiloDefinidoAqui["ebi_resi"];
+          } else if (idEntrada == "pob_xxx_ins"){
+            return estiloDefinidoAqui["ebi_inss"];
+          } else if (idEntrada == "pob_xxx_dia"){
+            return estiloDefinidoAqui["ebi_cdia"];
+          } else if (idEntrada == "pob_xxx_sal"){
+            return estiloDefinidoAqui["ebi_salu"];
+          } else if (idEntrada == "pob_xxx_hos"){
+            return estiloDefinidoAqui["ebi_hosp"];
+          } else if (idEntrada == "pob_xxx_den"){
           if (feature.values_.mostrar_pob_xxx_den_Valor <= 36){
             return estiloDefinidoAqui["ebi_densidad_1"];
           } else if ((feature.values_.mostrar_pob_xxx_den_Valor > 36) && (feature.values_.mostrar_pob_xxx_den_Valor <= 90)){

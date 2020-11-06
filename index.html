@@ -6,8 +6,7 @@
 
     <title>Visualizador Imago Orbis</title>
 
-    <!--<link rel="stylesheet" href="http://usig-proyectos.cchs.csic.es/ol/v5.2.0-dist/ol.css">-->
-    <link rel="stylesheet" href="../ol_local/v5.2.0-dist/ol.css">
+    <link rel="stylesheet" href="../ol/v5.2.0-dist/ol.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-slider.css">
@@ -21,14 +20,15 @@
     <script type="text/javascript" src="js/fuente/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/fuente/popper.min.js"></script>
     <script type="text/javascript" src="js/fuente/bootstrap.min.js"></script>
-    <!--<script type="text/javascript" src="http://usig-proyectos.cchs.csic.es/ol/v5.2.0-dist/ol.js"></script>-->
-    <script type="text/javascript" src="../ol_local/v5.2.0-dist/ol.js"></script>
+    <script type="text/javascript" src="../ol/v5.2.0-dist/ol.js"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.3/proj4.js"></script>
 
     <!-- TESELAS VECTORIALES -->
     <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,Promise"></script>
     <script type="text/javascript" src="js/fuente/olms.js"></script>
+  
 
     <!-- SHP2GEOJSON -->
     <script type="text/javascript" src="js/fuente/shp2geojson/preview.js"></script>
@@ -100,27 +100,27 @@
     <script type="text/javascript" src="js/geojson/anadirGeojsonExterno.js"></script>
     <script type="text/javascript" src="js/geojson/anadirGeojsonPropio.js"></script>
 
-    <script type="text/javascript" src="js/otros-formatos/anadirKML.js"></script>
-    <script type="text/javascript" src="js/otros-formatos/anadirGPX.js"></script>
+    <script type="text/javascript" src="js/otrosFormatos/anadirKML.js"></script>
+    <script type="text/javascript" src="js/otrosFormatos/anadirGPX.js"></script>
 
     <script type="text/javascript" src="js/popup.js"></script>
 
-    <script type="text/javascript" src="js/menu-lateral/busquedaEnCatalogo.js"></script>
-    <script type="text/javascript" src="js/menu-lateral/cargaURLExterna.js"></script>
-    <script type="text/javascript" src="js/menu-lateral/cargaArchivoExterno.js"></script>
-    <script type="text/javascript" src="js/menu-lateral/menuTematicas.js"></script>
-    <script type="text/javascript" src="js/menu-lateral/menuGestionCapas.js"></script>
-    <script type="text/javascript" src="js/menu-lateral/controlMenuLateral.js"></script>
-    <script type="text/javascript" src="js/menu-lateral/cargarCapa.js"></script>
+    <script type="text/javascript" src="js/menuLateral/busquedaEnCatalogo.js"></script>
+    <script type="text/javascript" src="js/menuLateral/cargaURLExterna.js"></script>
+    <script type="text/javascript" src="js/menuLateral/cargaArchivoExterno.js"></script>
+    <script type="text/javascript" src="js/menuLateral/menuTematicas.js"></script>
+    <script type="text/javascript" src="js/menuLateral/menuGestionCapas.js"></script>
+    <script type="text/javascript" src="js/menuLateral/controlMenuLateral.js"></script>
+    <script type="text/javascript" src="js/menuLateral/cargarCapa.js"></script>
 
-    <script type="text/javascript" src="js/menu-superior/arrayNodos.js"></script>
-    <script type="text/javascript" src="js/menu-superior/menuNodos.js"></script>
+    <script type="text/javascript" src="js/menuSuperior/arrayNodos.js"></script>
+    <script type="text/javascript" src="js/menuSuperior/menuNodos.js"></script>
 
     <script type="text/javascript" src="js/contexto/controlContexto.js"></script>
     <script type="text/javascript" src="js/contexto/generarContexto.js"></script>
     <script type="text/javascript" src="js/contexto/cargarContexto.js"></script>
   </head>
-  <body onload="CrearMapa();IniciarBarraLateral();CargarTematicas('');CargarNodos('');CrearMenuGestionCapas();GetRecords();ActivarListenerArchivosExternos();ActivarListenerCargarContexto();CrearLeyendaVacia();PonerIdioma('');">
+  <body onload="CrearMapa('blue_sea_usig');IniciarBarraLateral();CargarTematicas('');CargarNodos('');CrearMenuGestionCapas();GetRecords();ActivarListenerArchivosExternos();ActivarListenerCargarContexto();CrearLeyendaVacia();PonerIdioma('');">
     <header class="w-100">
       <!-- Barra superior -->
       <nav class="navbar p-0 m-0 navbar-expand-0">
@@ -222,19 +222,21 @@
       <!-- Control y menú de cambio de mapa base -->
       <div class="ol-control boton_cambio_base">
          <button id="btnAbrirMapaBase" class="m-0 p-1" onclick="AbrirMenuMapaBase();" title=""><i class="fas fa-th-large"></i></button>
-         <button id="btnCerrarMapaBase" class="m-0 p-1 cerrar" onclick="CerrarMenuMapaBase();" style="display:none;"  title=""><i class="fas fa-th-large"></i></button>
+         <button id="btnCerrarMapaBase" class="m-0 p-1 cerrar" onclick="CerrarMenuMapaBase();" style="display:none;"  title=""><i class="fas -large"></i></button>
       </div>
       <div id="menuMapaBase" class="row m-0 p-0 div_cambio_mapa_base" style="display:none;">
+        
+        <div id="baseVTuSIG_BlueBaseMap" class=" m-0 p-0 mapa_base_i mapa_base_VTusig_bluebasemap" onclick="CambioMapaBase('blue_sea_usig');" title="Vector Tiles uSIG BlueBaseMap"></div>
         <div id="baseVTusig_light" class=" m-0 p-0 mapa_base_i mapa_base_VTusig_light" onclick="CambioMapaBase('vector_tiles_usig_light');" title="Vector Tiles uSIG light"></div>
         <div id="baseVTusig_dark" class=" m-0 p-0 mapa_base_i mapa_base_VTusig_dark" onclick="CambioMapaBase('vector_tiles_usig_dark');" title="Vector Tiles uSIG dark"></div>
-        <div id="baseOSM" class=" m-0 p-0 mapa_base_i mapa_base_osm" onclick="CambioMapaBase('osm_base_map');" title="Open Street Maps"></div>
-        <div id="baseStamen" class=" m-0 p-0 mapa_base_i mapa_base_stamen" onclick="CambioMapaBase('stamen_water_color');" title="Stamen"></div>
+        <div id="baseVTuSIG_OceanBaseMap" class=" m-0 p-0 mapa_base_i mapa_base_VTusig_oceanbasemap" onclick="CambioMapaBase('vector_tiles_usig_oceanbasemap');" title="Vector Tiles uSIG OceanBaseMap"></div>
+          <!--<div id="baseOSM" class=" m-0 p-0 mapa_base_i mapa_base_osm" onclick="CambioMapaBase('osm_base_map');" title="Open Street Maps"></div>-->
         <div id="baseEsriWI" class=" m-0 p-0 mapa_base_i mapa_base_esri_wi" onclick="CambioMapaBase('esri_world_imagery');" title="Esri World Imagery"></div>
         <div id="baseEsriOB" class=" m-0 p-0 mapa_base_i mapa_base_esri_ob" onclick="CambioMapaBase('esri_ocean_basemap');" title="Esri Ocean Basemap"></div>
-        <div id="baseEsriNGWM" class=" m-0 p-0 mapa_base_i mapa_base_esri_NGwm" onclick="CambioMapaBase('esri_natgeo_world_map');" title="Esri NatGeo World Map"></div>
-        <div id="baseEsriWSR" class=" m-0 p-0 mapa_base_i mapa_base_esri_wsr" onclick="CambioMapaBase('esri_world_shaded_relief');" title="Esri World Shaded Relief"></div>
+        <!--<div id="baseEsriWSR" class=" m-0 p-0 mapa_base_i mapa_base_esri_wsr" onclick="CambioMapaBase('esri_world_shaded_relief');" title="Esri World Shaded Relief"></div>-->
+        <div id="baseIGN" class=" m-0 p-0 mapa_base_i mapa_base_wmts_ign" onclick="CambioMapaBase('mapa_base_ign');" title="Mapa Base IGN"></div>
+        <div id="baseAWMC" class=" m-0 p-0 mapa_base_i mapa_base_wmts_awmc" onclick="CambioMapaBase('mapa_base_awmc');" title="Mapa base Mundo Antiguo"></div>
       </div>
-
       <!-- Control de leyenda -->
       <div id="leyendaCapas" class="container p-0 m-0">
       </div>
@@ -399,7 +401,7 @@
                   <i class="fab fa-github"></i>
                 </button>
                 <button id="btnCC_BY_SA" class="btn boton_transparente ml-auto mx-2 my-0 p-0" title="" onclick="">
-                  <img class="img-fluid" src="img/by-sa.svg" style="height:1.9em;"></img>
+                  <img class="img-fluid" src="img/by-nc-sa.svg" style="height:1.9em;"></img>
                 </button>
                 <!--<button class="btn boton_transparente ml-auto mx-2 my-1 p-0" title="CC" onclick="">
                   <i class="fab fa-creative-commons"></i>
